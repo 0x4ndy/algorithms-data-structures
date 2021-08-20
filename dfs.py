@@ -19,10 +19,10 @@ def dfs(maze, start, goal):
 
         for direction in ["up", "right", "down", "left"]:
             next_row, next_col = offsets[direction]
-            neighbout = (current[0] + next_row, current[1] + next_col)
-            if can_move(maze, neighbout) and neighbout not in predecessors:
-                stack.push(neighbout)
-                predecessors[neighbout] = current
+            neighbour = (current[0] + next_row, current[1] + next_col)
+            if can_move(maze, neighbour) and neighbour not in predecessors:
+                stack.push(neighbour)
+                predecessors[neighbour] = current
 
     return None
 

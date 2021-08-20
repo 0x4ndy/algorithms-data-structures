@@ -3,7 +3,6 @@ This is an example implementation of BFS algorithm (iterative).
 """
 
 from queue import Queue
-import queue
 from helpers.graph_heplers import get_path, offsets
 from helpers.maze_helpers import load_maze, can_move, print_maze
 
@@ -20,10 +19,10 @@ def bfs(maze, start, goal):
 
         for direction in ["up", "right", "down", "left"]:
             next_row, next_col = offsets[direction]
-            neighbout = (current[0] + next_row, current[1] + next_col)
-            if can_move(maze, neighbout) and neighbout not in predecessors:
-                queue.enqueue(neighbout)
-                predecessors[neighbout] = current
+            neighbour = (current[0] + next_row, current[1] + next_col)
+            if can_move(maze, neighbour) and neighbour not in predecessors:
+                queue.enqueue(neighbour)
+                predecessors[neighbour] = current
 
     return None
 
