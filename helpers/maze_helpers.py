@@ -43,3 +43,12 @@ def can_move(maze, pos):
     col_count = len(maze[0])
 
     return 0 <= i < row_count and 0 <= j < col_count and maze[i][j] != "*"
+
+
+def calc_distance(a, b):
+    """
+    Calculates the Manhattan distance between coordinates 'a' and 'b'
+    """
+    x1, y1 = a
+    x2, y2 = b
+    return abs(x1 - x2) + abs(y1 - y2)
