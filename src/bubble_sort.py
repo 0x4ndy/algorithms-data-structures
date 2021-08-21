@@ -3,7 +3,7 @@ This is an example implementation of Bubble Sort algorithm.
 """
 
 
-def bubbleSort(dataset):
+def bubble_sort(dataset):
     for i in range(len(dataset) - 1, 0, -1):
         for j in range(i):
             if dataset[j] > dataset[j + 1]:
@@ -15,7 +15,7 @@ def bubbleSort(dataset):
 def test():
     list1 = [3, 6, 1, 9, 20, 12, 43, 1, 2, 4, 8, 5]
     print("List: ", list1)
-    bubbleSort(list1)
+    bubble_sort(list1)
     print("Result: ", list1)
 
 
