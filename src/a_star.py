@@ -2,7 +2,7 @@
 This is an example implementation of A* algorithm.
 """
 
-from priority_queue import PriorityQueue
+from data_structures.priority_queue import PriorityQueue
 from helpers.graph_heplers import get_path, offsets
 from helpers.maze_helpers import load_maze, can_move, print_maze, calc_distance
 

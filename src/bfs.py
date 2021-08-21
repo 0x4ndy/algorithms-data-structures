@@ -2,7 +2,7 @@
 This is an example implementation of BFS algorithm (iterative).
 """
 
-from queue import Queue
+from data_structures.queue import Queue
 from helpers.graph_heplers import get_path, offsets
 from helpers.maze_helpers import load_maze, can_move, print_maze
 

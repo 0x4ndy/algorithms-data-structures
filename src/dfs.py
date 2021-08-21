@@ -2,7 +2,7 @@
 This is an example implementation of DFS algorithm (iterative).
 """
 
-from stack import Stack
+from data_structures.stack import Stack
 from helpers.graph_heplers import get_path, offsets
 from helpers.maze_helpers import load_maze, can_move, print_maze
 
