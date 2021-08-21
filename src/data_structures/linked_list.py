@@ -3,7 +3,7 @@ This is an example implementation of Linked List.
 """
 
 
-class Node():
+class Node:
     def __init__(self, val):
         self.val = val
         self.next = None
@@ -24,7 +24,7 @@ class Node():
         return str(self.val)
 
 
-class LinkedList():
+class LinkedList:
     def __init__(self, head=None):
         self.head = head
         self.count = 0
