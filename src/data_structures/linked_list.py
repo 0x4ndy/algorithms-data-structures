@@ -40,7 +40,7 @@ class LinkedList:
 
     def find(self, val):
         item = self.head
-        while (item != None):
+        while item != None:
             if item.get_data() == val:
                 return item
             else:
@@ -65,7 +65,7 @@ class LinkedList:
 
     def dump_list(self):
         tempnode = self.head
-        while (tempnode != None):
+        while tempnode != None:
             print("Node: ", tempnode.get_data())
             tempnode = tempnode.get_next()
 
