@@ -88,5 +88,6 @@ def test():
     itemList.dump_list()
 
 
+# Run the test function if executed as standalone
 if __name__ == "__main__":
     test()

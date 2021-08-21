@@ -39,5 +39,6 @@ def test():
     assert element == "first"
 
 
+# Run the test function if executed as standalone
 if __name__ == "__main__":
     test()
