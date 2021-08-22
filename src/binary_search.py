@@ -26,6 +26,7 @@ def binary_search(item, item_list):
 
 def test():
     items = [1, 1, 2, 3, 4, 5, 6, 8, 9, 12, 20, 43]
+    print("List: {}".format(items))
     print("Value {} is at index: {}".format(9, binary_search(9, items)))
 
 
